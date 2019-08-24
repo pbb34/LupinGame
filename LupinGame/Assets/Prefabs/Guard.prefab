@@ -33,6 +33,7 @@ Transform:
   m_LocalScale: {x: 2.902254, y: 2.902252, z: 2.07379}
   m_Children:
   - {fileID: 7591980987752352480}
+  - {fileID: 7591980987032557754}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8fb98a6035269e64a998f9b56828fc4f, type: 3}
-  m_Color: {r: 0.9811321, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.7721828, g: 0.7216981, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -192,3 +193,86 @@ Transform:
   m_Father: {fileID: 7591980986510361687}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7591980987032945210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7591980986510361687}
+    m_Modifications:
+    - target: {fileID: 100000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_Name
+      value: FOV2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.158
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: raysGizmosEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: fovAngle
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+      propertyPath: fovMaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aeaa5e93e6bebe74ea7da38498ffec6d, type: 3}
+--- !u!4 &7591980987032557754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: aeaa5e93e6bebe74ea7da38498ffec6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7591980987032945210}
+  m_PrefabAsset: {fileID: 0}
