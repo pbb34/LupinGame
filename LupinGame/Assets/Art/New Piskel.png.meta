@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: addf020275b020344be74c314b380492
+guid: 0a31372315b9d1540a02f9fea2cdbd22
 TextureImporter:
   fileIDToRecycleName:
-    21300000: LupinRunSpriteSheet_0
-    21300002: LupinRunSpriteSheet_1
-    21300004: LupinRunSpriteSheet_2
-    21300006: LupinRunSpriteSheet_3
+    21300000: New Piskel_0
+    21300002: New Piskel_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -88,13 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LupinRunSpriteSheet_0
+      name: New Piskel_0
       rect:
         serializedVersion: 2
-        x: 216
-        y: 38
-        width: 1458
-        height: 2609
+        x: 1
+        y: 0
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,19 +100,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1f18996f641c4408a3f27046d4cb92
+      spriteID: 8ea575059da925e42a1fcadb707843dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LupinRunSpriteSheet_1
+      name: New Piskel_1
       rect:
         serializedVersion: 2
-        x: 2180
-        y: 61
-        width: 1317
-        height: 2563
+        x: 33
+        y: 3
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,47 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5276f85041f99547aa4c50a5987170e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LupinRunSpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 3848
-        y: 2028
-        width: 347
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da41ac34a68d83d41a8eed65f12079e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LupinRunSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 4301
-        y: 2028
-        width: 388
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c35574474a0b15340a86c072903157e8
+      spriteID: 13ac2712c2c622d48800117fb42afd3e
       vertices: []
       indices: 
       edges: []
@@ -170,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 452063c3fb2e4a74a98a3b1da3a3a632
+    spriteID: 18c830626b5040f448bf400f6029cccf
     vertices: []
     indices: 
     edges: []

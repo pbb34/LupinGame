@@ -43,10 +43,17 @@ public class FOV2DEyes : MonoBehaviour
                 hit.point = transform.position + (direction * fovMaxDistance);
             }
 
+          /*if (hit.collider.tag=="Player")
+            {
+                print("HIT PLAYER");
+            }
+            */
             hits2D.Add(hit);
 
             currentAngle += 1f / quality;
         }
+
+
     }
 
     void OnDrawGizmosSelected()
