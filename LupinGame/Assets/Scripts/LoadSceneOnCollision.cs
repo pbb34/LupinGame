@@ -5,18 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnCollision : MonoBehaviour
 {
-    [SerializeField] public string sceneName;
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (col.gameObject.tag == "Player")
+
+        if (collision.gameObject.CompareTag("Player"))
         {
-            LoadScene(sceneName);
+            SceneManager.LoadScene("Win");
         }
     }
-
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
 }
