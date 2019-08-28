@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBarScript : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class HealthBarScript : MonoBehaviour
         {
             
             Destroy(player);
+            SceneManager.LoadScene("GameOver");
         }
 
     }
