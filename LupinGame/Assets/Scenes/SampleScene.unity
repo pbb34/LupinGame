@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,6 +200,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7591980987025961336, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: quality
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987033044122, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efc32833ae79964faa323903494490b, type: 3}
 --- !u!1 &110336330
@@ -259,7 +269,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbbabe9e292f5604897926494bb38fef, type: 3}
-  m_Color: {r: 0.35909882, g: 1, b: 0.2971698, a: 1}
+  m_Color: {r: 0, g: 0.5497819, b: 0.990566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -956,6 +966,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &175733857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6534528053603168113, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+    type: 3}
+  m_PrefabInstance: {fileID: 6534528053539308863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &175733861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6534528053603168110, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+    type: 3}
+  m_PrefabInstance: {fileID: 6534528053539308863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &175733862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175733857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: dd55731f650c17b4b98ba0005d2f4ee4, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &175733863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175733857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 175733861}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 1
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &197938022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,8 +1412,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1300796853
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 471b7b988df177948962f6fc93ebe865, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1334,12 +1433,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432165682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.56, y: 8.91, z: 0}
-  m_LocalScale: {x: 1.8908691, y: 2.0957208, z: 1.8225244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.572374, y: -10.313576, z: 10.054248}
+  m_LocalScale: {x: 1.2509058, y: 1.3864255, z: 1.2056923}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465389633
 GameObject:
@@ -1841,8 +1940,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1300796853
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b81e420280a13d46a0049465d01df59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1862,12 +1961,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634977740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.53, y: 11.82, z: 0}
-  m_LocalScale: {x: 3.6687677, y: 4.3119392, z: 3.3006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.894152, y: -8.388463, z: 10.054248}
+  m_LocalScale: {x: 2.4270759, y: 2.8525665, z: 2.1835144}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667690832
 GameObject:
@@ -1920,8 +2019,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1300796853
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b81e420280a13d46a0049465d01df59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1941,12 +2040,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667690832}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 35.73, y: 13.22, z: 9.2}
-  m_LocalScale: {x: 2.0636818, y: 4.1216574, z: 3.3006}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 14.794, y: -7.4622917, z: 16.140512}
+  m_LocalScale: {x: 2.7912145, y: 2.7266853, z: 2.1835144}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &738431188
 GameObject:
@@ -2242,10 +2341,20 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7591980987025961336, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: quality
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7591980986510858356, guid: 2efc32833ae79964faa323903494490b,
         type: 3}
       propertyPath: speed
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987033044122, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efc32833ae79964faa323903494490b, type: 3}
@@ -2690,7 +2799,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbbabe9e292f5604897926494bb38fef, type: 3}
-  m_Color: {r: 0.35909882, g: 1, b: 0.2971698, a: 1}
+  m_Color: {r: 0.033018887, g: 0.41936994, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3099,85 +3208,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1076534845
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1076534847}
-  - component: {fileID: 1076534846}
-  m_Layer: 0
-  m_Name: patch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1076534846
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076534845}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b46d22dc73105ad448963c7d9da0e7cf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.05, y: 0.94}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1076534847
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076534845}
-  m_LocalRotation: {x: 0.033415023, y: -0, z: -0, w: 0.99944156}
-  m_LocalPosition: {x: 46.698574, y: 20.26, z: -0.08}
-  m_LocalScale: {x: 11.522571, y: 11.522571, z: 11.522571}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 3.8300002, y: 0, z: 0}
 --- !u!1 &1076699631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,7 +3419,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbbabe9e292f5604897926494bb38fef, type: 3}
-  m_Color: {r: 0.35909882, g: 1, b: 0.2971698, a: 1}
+  m_Color: {r: 0, g: 0.69766396, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3907,15 +3937,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351238652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.09, y: 9.3, z: 0}
-  m_LocalScale: {x: 4.326336, y: 5.429972, z: 4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 34.80021, y: -10.055571, z: 10.054248}
+  m_LocalScale: {x: 2.8620906, y: 3.592202, z: 2.6462028}
   m_Children:
   - {fileID: 2064681096}
   - {fileID: 560380577}
   - {fileID: 569117843}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1351238657
 Rigidbody2D:
@@ -4010,12 +4040,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356836824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.57, y: 14.36, z: 0}
-  m_LocalScale: {x: 25.193665, y: 25.193665, z: 25.193665}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.148453, y: -6.708124, z: 10.054248}
+  m_LocalScale: {x: 16.666887, y: 16.666887, z: 16.666887}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410448875
 GameObject:
@@ -4450,6 +4480,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7591980987025961336, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: quality
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987033044122, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efc32833ae79964faa323903494490b, type: 3}
 --- !u!1 &1587301415
@@ -4563,7 +4603,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbbabe9e292f5604897926494bb38fef, type: 3}
-  m_Color: {r: 0.35909882, g: 1, b: 0.2971698, a: 1}
+  m_Color: {r: 0, g: 0.3944354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4889,6 +4929,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!21 &1766253318
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/ImageEffects/RetroFX
+  m_Shader: {fileID: 4800000, guid: 89e0eaa4aa75049dcb4d36c4903c4218, type: 3}
+  m_ShaderKeywords: DITHERING_ON PALETTE_ON RGB_DITHERING_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &1864610491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,8 +5429,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1300796853
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b81e420280a13d46a0049465d01df59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5385,12 +5450,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056415876}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 23.84, y: 11.82, z: 0}
-  m_LocalScale: {x: 3.6687677, y: 4.3119392, z: 3.3006}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 2.8803918, y: -8.388463, z: 10.054248}
+  m_LocalScale: {x: 2.4270759, y: 2.8525665, z: 2.1835144}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 17698397}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2064681095
 GameObject:
@@ -5974,6 +6039,1107 @@ PrefabInstance:
       propertyPath: field of view
       value: 67.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6534528053603168111, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: RetroMaterial
+      value: 
+      objectReference: {fileID: 1766253318}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: UsePalette
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: ColorPalette
+      value: 
+      objectReference: {fileID: 11400000, guid: c8f75592079b6994fa1a69d0c4afa6ba,
+        type: 2}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[0].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[1].x
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[1].y
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[1].z
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[1].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[2].x
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[2].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[3].x
+      value: 0.6640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[3].y
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[3].z
+      value: 0.9296875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[3].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[4].x
+      value: 0.796875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[4].y
+      value: 0.265625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[4].z
+      value: 0.796875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[4].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[5].y
+      value: 0.796875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[5].z
+      value: 0.33203125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[5].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[6].z
+      value: 0.6640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[6].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[7].x
+      value: 0.9296875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[7].y
+      value: 0.9296875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[7].z
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[7].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[8].x
+      value: 0.86328125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[8].y
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[8].z
+      value: 0.33203125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[8].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[9].x
+      value: 0.3984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[9].y
+      value: 0.265625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[9].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[10].x
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[10].y
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[10].z
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[10].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[11].x
+      value: 0.19921875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[11].y
+      value: 0.19921875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[11].z
+      value: 0.19921875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[11].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[12].x
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[12].y
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[12].z
+      value: 0.46484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[12].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[13].x
+      value: 0.6640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[13].y
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[13].z
+      value: 0.3984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[13].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[14].y
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[14].z
+      value: 0.99609375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[14].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[15].x
+      value: 0.73046875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[15].y
+      value: 0.73046875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[15].z
+      value: 0.73046875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[15].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[0].z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[2].z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[5].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[6].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[6].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[14].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[16].y
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[16].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[16].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[17].y
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[17].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[17].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[18].x
+      value: 0.40625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[18].y
+      value: 0.265625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[18].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[18].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[19].x
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[19].z
+      value: 0.796875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[19].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[20].x
+      value: 0.890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[20].z
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[20].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[21].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[21].y
+      value: 0.21875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[21].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[22].x
+      value: 0.890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[22].y
+      value: 0.359375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[22].z
+      value: 0.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[22].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[23].x
+      value: 0.671875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[23].y
+      value: 0.484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[23].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[24].y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[24].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[25].y
+      value: 0.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[25].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[26].y
+      value: 0.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[26].z
+      value: 0.265625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[26].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[27].y
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[27].z
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[27].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[28].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[28].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[28].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[28].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[29].x
+      value: 0.234375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[29].y
+      value: 0.734375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[29].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[29].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[30].x
+      value: 0.40625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[30].y
+      value: 0.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[30].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[30].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[31].x
+      value: 0.59375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[31].y
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[31].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[31].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[32].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[32].y
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[32].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[32].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[33].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[33].y
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[33].z
+      value: 0.59375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[33].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[34].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[34].y
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[34].z
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[34].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[35].x
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[35].y
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[35].z
+      value: 0.265625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[35].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[36].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[36].y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[36].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[37].x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[37].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[37].z
+      value: 0.09375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[37].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[38].x
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[38].y
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[38].z
+      value: 0.328125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[38].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[39].x
+      value: 0.34375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[39].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[39].z
+      value: 0.59375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[39].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[40].y
+      value: 0.90625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[40].z
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[40].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[41].x
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[41].y
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[41].z
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[41].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[42].x
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[42].y
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[42].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[42].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[43].x
+      value: 0.640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[43].y
+      value: 0.890625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[43].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[43].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[44].x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[44].y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[44].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[44].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[45].x
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[45].y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[45].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[45].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[46].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[46].y
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[46].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[46].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[47].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[47].y
+      value: 0.640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[47].z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[47].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[48].x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[48].y
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[48].z
+      value: 0.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[48].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[49].x
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[49].y
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[49].z
+      value: 0.65625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[49].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[50].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[50].y
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[50].z
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[50].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[51].x
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[51].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[51].z
+      value: 0.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[51].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[52].x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[52].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[52].z
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[52].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[53].x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[53].y
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[53].z
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[53].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[54].y
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[54].z
+      value: 0.984375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[54].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[55].x
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[55].y
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[55].z
+      value: 0.96875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _PaletteColorVectors.Array.data[55].w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: MatchReferenceResolution
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _ContrastBoost
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _BrightnessBoost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: EnableDithering
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: RGBDithering
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: PixelateDitherMap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319979699871372708, guid: 6e21e2aacd0f3774cadf1a690fd3eebf,
+        type: 3}
+      propertyPath: _ColorDepth
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e21e2aacd0f3774cadf1a690fd3eebf, type: 3}
 --- !u!1001 &7591980986683217790
@@ -6043,10 +7209,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7591980987025961336, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: quality
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7591980987033044122, guid: 2efc32833ae79964faa323903494490b,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987033044122, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7591980987034983002, guid: 2efc32833ae79964faa323903494490b,
         type: 3}
