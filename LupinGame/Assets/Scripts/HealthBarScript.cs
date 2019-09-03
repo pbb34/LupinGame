@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class HealthBarScript : MonoBehaviour
 {
     Image healthBar;
-    float maxHealth = 100f;
+    float maxHealth = 10000f;
     public static float health;
     public GameObject player;
     // Start is called before the first frame update

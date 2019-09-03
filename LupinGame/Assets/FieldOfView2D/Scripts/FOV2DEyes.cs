@@ -22,6 +22,7 @@ public class FOV2DEyes : MonoBehaviour
     void Update()
     {
         Cast2DRays();
+        DamageCheck();
     }
 
 
@@ -31,6 +32,7 @@ public class FOV2DEyes : MonoBehaviour
         numRays = fovAngle * quality;
         currentAngle = fovAngle / -2;
 
+
         hits2D.Clear();
 
         for (int i = 0; i < numRays; i++)
@@ -38,23 +40,32 @@ public class FOV2DEyes : MonoBehaviour
             direction = Quaternion.AngleAxis(currentAngle, transform.up) * transform.forward;
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, fovMaxDistance, cullingMask);
+            
             if (hit == false)
             {
                 hit.point = transform.position + (direction * fovMaxDistance);
             }
-
-          /*if (hit.collider.tag=="Player")
-            {
-                print("HIT PLAYER");
-            }
-            */
+                    
             hits2D.Add(hit);
 
             currentAngle += 1f / quality;
         }
 
-
     }
+
+    void DamageCheck()
+    {
+        foreach (RaycastHit2D hit in hits2D)
+        {
+            if (hit.rigidbody.CompareTag("Player"))
+            {
+                HealthBarScript.health = HealthBarScript.health - 1f;
+            }
+
+        }
+    }
+
+ 
 
     void OnDrawGizmosSelected()
     {
@@ -66,6 +77,11 @@ public class FOV2DEyes : MonoBehaviour
             {
                 Gizmos.DrawSphere(hit.point, 0.04f);
                 Gizmos.DrawLine(transform.position, hit.point);
+                //if (hit.rigidbody.CompareTag("Player"))
+                //{
+                //    HealthBarScript.health = HealthBarScript.health - 1f;
+                //}
+
             }
         }
     }
