@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MoneySprites
+    uniqueID: 635881259
+    locked: 0
   - name: Background
     uniqueID: 1300796853
     locked: 0
