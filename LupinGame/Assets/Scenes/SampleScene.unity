@@ -5673,12 +5673,12 @@ PrefabInstance:
     - target: {fileID: 4781584784329598592, guid: 15b0e7c43e9242249b171bceb68406cf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.15
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 4781584784329598592, guid: 15b0e7c43e9242249b171bceb68406cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.3
+      value: 20.17
       objectReference: {fileID: 0}
     - target: {fileID: 4781584784329598592, guid: 15b0e7c43e9242249b171bceb68406cf,
         type: 3}
@@ -7302,6 +7302,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987752352480, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980987752352480, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980986504792821, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591980986504792821, guid: 2efc32833ae79964faa323903494490b,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efc32833ae79964faa323903494490b, type: 3}

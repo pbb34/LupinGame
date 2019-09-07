@@ -93,12 +93,12 @@ TextureImporter:
       name: spriteSheetTemp_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 92
         y: 0
-        width: 2005.3334
+        width: 2005
         height: 3128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,12 +113,12 @@ TextureImporter:
       name: spriteSheetTemp_1
       rect:
         serializedVersion: 2
-        x: 1997
-        y: 0
+        x: 2066
+        y: 8
         width: 1927
         height: 3114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,12 +133,12 @@ TextureImporter:
       name: spriteSheetTemp_2
       rect:
         serializedVersion: 2
-        x: 3900
-        y: 0
+        x: 3977
+        y: 5
         width: 2005
         height: 3128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: spriteSheetTemp_3
       rect:
         serializedVersion: 2
-        x: 5889
+        x: 5966
         y: 0
         width: 2005
         height: 3128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,13 +173,13 @@ TextureImporter:
       name: spriteSheetTemp_4
       rect:
         serializedVersion: 2
-        x: 7926
+        x: 8008
         y: 0
-        width: 1951
+        width: 1907
         height: 3128
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 7, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -193,13 +193,13 @@ TextureImporter:
       name: spriteSheetTemp_5
       rect:
         serializedVersion: 2
-        x: 9876
-        y: 0
+        x: 9764
+        y: 5
         width: 2005
         height: 3128
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 205, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
